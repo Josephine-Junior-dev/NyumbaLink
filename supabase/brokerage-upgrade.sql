@@ -9,6 +9,7 @@ create table if not exists public.nl_property_sources (
  created_at timestamptz not null default now(),
  updated_at timestamptz not null default now()
 );
+alter table public.nl_inquiries alter column buyer_id drop not null;
 alter table public.nl_inquiries add column if not exists customer_name text;
 alter table public.nl_inquiries add column if not exists customer_email text;
 alter table public.nl_inquiries add column if not exists commission_expected numeric(14,2) not null default 0;
