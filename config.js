@@ -1,6 +1,7 @@
-// NyumbaLink Supabase settings. Replace these two values with your project's URL and publishable/anon key.
-// Never put a Supabase service_role key in this browser application.
+// NyumbaLink uses the same Supabase project credentials as Garage Operations Pro.
+// Its data remains separate in the nl_* tables with independent Row Level Security policies.
+// Never place a service_role or secret key in this browser application.
 window.APP_CONFIG = {
-  SUPABASE_URL: "YOUR_SUPABASE_PROJECT_URL",
-  SUPABASE_ANON_KEY: "YOUR_SUPABASE_PUBLISHABLE_OR_ANON_KEY"
+  SUPABASE_URL: "https://ptluwoeogfkqavhspdjj.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable_wDsWINauH0jX9rezsEwczw_RovrM6Nv"
 };
